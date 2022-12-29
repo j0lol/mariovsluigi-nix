@@ -41,6 +41,8 @@
 					install -m755 MarioVsLuigi-Linux/linux.x86_64 $out/share
 					echo "cd $out/share/ && steam-run ./linux.x86_64" > $out/bin/mariovsluigi
 					chmod 755 $out/bin/mariovsluigi
+
+			    cp $out/share/linux_Data/Resources/UnityPlayer.png $out/share/pixmaps/mariovsluigi.png
 				'';
 
 			  desktopItems = [
