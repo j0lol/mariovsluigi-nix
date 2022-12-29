@@ -36,6 +36,7 @@
 				installPhase = ''
 					ls MarioVsLuigi-Linux/
 					mkdir -p $out/{bin,share}/
+					mkdir $out/share/pixmaps
 					cp -r MarioVsLuigi-Linux/linux_Data $out/share
 					install -m755 MarioVsLuigi-Linux/UnityPlayer.so $out/share
 					install -m755 MarioVsLuigi-Linux/linux.x86_64 $out/share
