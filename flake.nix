@@ -27,6 +27,7 @@
 				nativeBuildInputs = [
 					unzip
 					autoPatchelfHook
+					copyDesktopItems
 				];
 
 				buildInputs = [
@@ -44,6 +45,8 @@
 					chmod 755 $out/bin/mariovsluigi
 
 			    cp $out/share/linux_Data/Resources/UnityPlayer.png $out/share/pixmaps/mariovsluigi.png
+
+					copyDesktopItems
 				'';
 
 			  desktopItems = [
